@@ -1,0 +1,398 @@
+@import url(fonts.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open_Sans";
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.container {
+    max-width: 964px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* header start */
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__content {
+    background: url(../img/header/bg.png) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header__content_logo {
+    margin-top: 39px;
+}
+
+
+.header__content-title {
+    font-family: "Bebas_Neue";
+    font-size: 60px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 5px;
+    text-align: center;
+
+}
+
+.header__content-subtitle {
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.header__content-btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: 70px;
+}
+
+.header__nav {
+    padding: 24px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.header__nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__list  {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.header__link {
+    font-size: 12px;
+    font-weight: 600;
+    color: #48555B;
+    transition: 400ms;
+}
+
+.header__link:hover {
+    color: #00A4E5;
+}
+
+/* header end */
+
+/* main start */
+
+
+
+.main__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #48555B;
+    margin-bottom: 66px;
+    position: relative;
+}
+
+.story .main__title {
+    display: flex;
+    justify-content: center;
+}
+
+
+.project__desc .main__title::before {
+    content: '';
+    position: absolute;
+    background: #00A4E5;
+    height: 2px;
+    width: 50px;
+    top: 34px;
+}
+
+.story .main__title::before {
+    content: '';
+    position: absolute;
+    background: #00A4E5;
+    height: 2px;
+    width: 50px;
+    top: 34px;
+}
+
+.story__main{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.story__desc {
+    max-width: 394px;
+    width: 100%;
+}
+
+.story {
+    padding: 57px 0 0 0;
+    position: relative;
+    margin-bottom: 119px;
+}
+
+
+
+.story__desc-title {
+    font-size: 20px;
+    color: #48555B;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.story__desc-title span {
+    color: #16ACE8;
+}
+
+.story__desc-txt {
+    font-size: 13px;
+    color: #48555B;
+}
+
+.story__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.story__card {
+    position: relative;
+}
+
+.story__card-subtitle {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+    max-width: 110px;
+    width: 100%;
+}
+
+.project {
+    margin-bottom: 115px;
+}
+
+.project__desc {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 78px;
+    flex-wrap: wrap;
+}
+
+.project__desc:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+} 
+
+.project__desc-more {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project__desc-txt {
+    font-size: 11px;
+    max-width: 395px;
+    width: 100%;
+}
+
+.project__desc-btn {
+    color: #fff;
+    padding: 11px 30px;
+    background: #00A4E5;
+    font-size: 13px;
+}
+
+.project__desc-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project__card {
+    max-width: 295px;
+    width: 100%;
+    padding: 38px 22px ;
+    border: 1px solid #E6E6E6;
+}
+
+.project__card-title {
+    color: #48555B;
+    font-size: 16px;
+    margin: 25px 0 13px 0;
+}
+
+.project__card-txt {
+    font-size: 13px;
+    color: #48555B;
+}
+
+.main__end-content {
+    background: url(../img/main/bg.png) no-repeat center center / cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 35px;
+}
+
+.main__end-title {
+    font-size: 30px;
+    color: #48555B;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.main__end-btn {
+    background: #00A4E5;
+    padding: 11px 26px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main__end-signup {
+    padding: 30px 15px;
+    background: #171819;
+    display: flex;
+    justify-content: center;
+    column-gap: 69px;
+}
+
+.signup__txt {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.signup__form {
+    display: flex;
+}
+
+.signup__inp {
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 10px 17px;
+    max-width: 250px;
+    width: 100%;
+}
+
+.signup__btn {
+    cursor: pointer;
+    border: none;
+    background: #00A4E5;
+    padding: 11px 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+
+/* main end */
+
+/* footer start */
+
+.footer__desc {
+    padding: 38px 0 53px 0;
+    background: #141A20;
+}
+
+.footer__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__card {
+    max-width: 250px;
+    width: 100%;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer__txt {
+    margin: 15px 0 25px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.footer__card-desc .footer__txt {
+    margin:0;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 25px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__link{
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer__card-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__contact {
+    font-size: 11px;
+    color: #fff;
+}
+
+.footer__end-txt {
+    background: #171819;
+    font-size: 11px;
+    color: #fff;
+    padding: 22px 0;
+    text-align: center;
+}
+
+/* footer end */
